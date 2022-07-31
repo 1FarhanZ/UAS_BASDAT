@@ -18,7 +18,7 @@
 
 			<h3>Input Alamat Pengiriman dan Pembayaran</h3>
 			
-			<?php echo form_open_multipart('dashboard/proses_pesanan'); ?>
+			<form method="post" action="<?php echo base_url() ?>dashboard/proses_pesanan" >
 				
 				<div class="form-group">
 					<label>Nama Lengkap</label>
@@ -46,19 +46,16 @@
 				<div class="form-group">
 					<label>Pilih Bank</label>
 					<select class="form-control">
-						<option>BCA - 8735089231 an MileStyle</option>
-						<option>BNI - 1734489226 an MileStyle</option>
-						<option>BRI - 561532923173912 an MileStyle</option>
-						<option>MANDIRI - 1732089231542 an MileStyle</option>
+						<option>BCA - xxxxxxx</option>
+						<option>BNI - xxxxxxx</option>
+						<option>BRI - xxxxxxx</option>
+						<option>MANDIRI - xxx</option>
 					</select>
 				</div>
-				<div class="form-group">
-					<label>Bukti Pembayaran</label><br>
-					<input type="file" name="gambar" class="form-control">
-				</div>
-				<button type="submit" class="btn btn-sm btn-primary">Saya sudah membayar</button>
-				<br><br>
-			<?php echo form_close(); ?>
+
+				<button type="submit" class="btn btn-sm btn-primary">Pesan</button>
+				
+			</form>
 
 			<?php 
 			}else{

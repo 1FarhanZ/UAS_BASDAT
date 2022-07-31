@@ -13,32 +13,22 @@
                             </div>
                             <form method="post" action="<?php echo base_url('registrasi') ?>" class="user">
                                <div class="form-group">
-                                    <label>Nama Pengguna</label>
                                     <input type="text" class="form-control form-control-user" id="exampleInputEmail"
                                     placeholder="Nama" name="nama">
                                     <?php echo form_error('nama', '<div class="text-danger small ml-2">', '</div>') ?>
                                 </div>
                                 <div class="form-group">
-                                    <label>Email</label>
-                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
-                                    placeholder="Email Address" name="email">
-                                    <?php echo form_error('email', '<div class="text-danger small ml-2">', '</div>') ?>
-                                </div>
-                                <div class="form-group">
-                                    <label>Username</label>
                                     <input type="username" class="form-control form-control-user" id="exampleInputEmail"
                                         placeholder="Username" name="username">
                                          <?php echo form_error('username', '<div class="text-danger small ml-2">', '</div>') ?>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                    <label>Password</label>
                                         <input type="password" class="form-control form-control-user"
                                             id="exampleInputPassword" placeholder="Password" name="password_1">
                                             <?php echo form_error('password_1', '<div class="text-danger small ml-2">', '</div>') ?>
                                     </div>
                                     <div class="col-sm-6">
-                                    <label>Ulangi Password</label>
                                         <input type="password" class="form-control form-control-user"
                                             id="exampleRepeatPassword" placeholder="Ulangi Password" name="password_2">
                                     </div>

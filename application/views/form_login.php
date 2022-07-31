@@ -14,19 +14,17 @@
                             <div class="col-lg-12">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Toko Milestyle</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Login Toko Far</h1>
                                     </div>
                                     <?php echo $this->session->flashdata('pesan') ?>
                                     <form method="post" action="<?php echo base_url('auth/login') ?>" class="user">
                                         <div class="form-group">
-                                            <label>Username</label>
                                             <input type="text" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
                                                 placeholder="Username" name="username">
                                                 <?php echo form_error('username', '<div class="text-danger small ml-2">', '</div>'); ?>
                                         </div>
                                         <div class="form-group">
-                                            <label>Password</label>
                                             <input type="password" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Password" name="password">
                                                  <?php echo form_error('password', '<div class="text-danger small ml-2">', '</div>'); ?>
@@ -35,8 +33,7 @@
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="<?php echo base_url('auth/lupasandi') ?>">Lupa Password</a> | 
-                                        <a class="small" href="<?php echo base_url('registrasi') ?>">Buat akun baru</a> 
+                                        <a class="small" href="<?php echo base_url('registrasi') ?>">Buat akun baru</a>
                                     </div>
                                     </div>
                                 </div>

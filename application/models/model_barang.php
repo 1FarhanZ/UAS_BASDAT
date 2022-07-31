@@ -6,34 +6,6 @@ class Model_barang extends CI_Model{
 		return $this->db->get('tb_barang');
 	}
 
-	public function tampil_produk($keyword=null)
-	{
-		$this->db->select('*');
-		$this->db->from('tb_barang');
-		if(!empty($keyword)){
-			$this->db->like('nama_brg',$keyword);
-		}
-		return $this->db->get()->result();
-	}
-
-	public function totalDataTransaksi()
-	{
-		$totalData = $this->db->get_where('tb_pesanan')->num_rows();
-        return $totalData;
-	}
-
-	public function totalDataPengguna()
-	{
-		$totalData = $this->db->get_where('tb_user', ['role_id' => '2'])->num_rows();
-        return $totalData;
-	}
-
-	public function totalDataBarang()
-	{
-		$totalData = $this->db->get_where('tb_barang')->num_rows();
-        return $totalData;
-	}
-
 	public function tambah_barang($data,$table)
 	{
 		return $this->db->insert($table,$data);

@@ -51,7 +51,7 @@
        
 
         	<div class="form-group">
-        		<label>Nama Produk</label>
+        		<label>Nama Barang</label>
         		<input type="text" name="nama_brg" class="form-control">
         	</div>
         	<div class="form-group">
@@ -61,9 +61,11 @@
         	<div class="form-group">
         		<label>Kategori</label>
         		<select class="form-control" name="kategori">
+        			<option>Elektronik</option>
         			<option>Pakaian Pria</option>
         			<option>Pakaian Wanita</option>
         			<option>Pakaian Anak</option>
+        			<option>Peralatan Olahraga</option>
         		</select>
         	</div>
         	<div class="form-group">

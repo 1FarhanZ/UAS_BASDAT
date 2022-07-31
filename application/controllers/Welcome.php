@@ -20,18 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$keyword = $this->input->get('keyword');
-		$data['barang'] = $this->model_barang->tampil_produk($keyword); //menampilkan data di dashboard
-		$this->load->view('templates/header');
-		$this->load->view('templates/sidebar');
-		$this->load->view('dashboard', $data);							//menampilkan data di dashboard
-		$this->load->view('templates/footer');
-	}
-
-	public function cariProduk($produk)
-	{
-		$keyword = $this->input->get('keyword');
-		$data['barang'] = $this->model_barang->tampil_produk(); //menampilkan data di dashboard
+		$data['barang'] = $this->model_barang->tampil_data()->result(); //menampilkan data di dashboard
 		$this->load->view('templates/header');
 		$this->load->view('templates/sidebar');
 		$this->load->view('dashboard', $data);							//menampilkan data di dashboard

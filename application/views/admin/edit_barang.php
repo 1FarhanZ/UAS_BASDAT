@@ -17,11 +17,7 @@
 
 			<div class="for-group">
 				<label>Kategori</label>
-				<select class="form-control" name="kategori">
-        			<option>Pakaian Pria</option>
-        			<option>Pakaian Wanita</option>
-        			<option>Pakaian Anak</option>
-        		</select>			
+				<input type="text" name="kategori" class="form-control" value="<?php echo $brg->kategori ?>">			
 			</div>
 
 			<div class="for-group">
