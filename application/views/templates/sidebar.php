@@ -9,9 +9,9 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url('welcome') ?>">
                 <div class="sidebar-brand-icon r">
-                    <i class="fas fa-store"></i>
+                    <i class="fab fa-monero"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Tokofar</div>
+                <div class="sidebar-brand-text mx-3">MS Store</div>
             </a>
 
             <!-- Divider -->
@@ -35,11 +35,6 @@
             
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('kategori/elektronik') ?>">
-                    <i class="fas fa-tv"></i>
-                    <span>Elektronik</span></a>
-            </li>
 
              <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url('kategori/pakaian_pria') ?>">
@@ -58,26 +53,6 @@
                     <i class="fas fa-child"></i>
                     <span>Pakaian Anak</span></a>
             </li>
-
-             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('kategori/peralatan_olahraga') ?>">
-                    <i class="fas fa-basketball-ball"></i>
-                    <span>Peralatan Olahraga</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Kurir
-            </div>
-
-            <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('produk/lokasi') ?>">
-                    <i class="fas fa-receipt"></i>
-                    <span>Cek Ongkos Kirim</span></a>
-            </li>            
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -106,11 +81,11 @@
                     </button>
 
                     <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <form action="<?= base_url(''); ?>"  method="get"
+                    class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Cari Produk..."
+                                aria-label="Search" name='keyword' id='keyword' aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>

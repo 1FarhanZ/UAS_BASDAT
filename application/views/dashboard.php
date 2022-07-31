@@ -13,6 +13,9 @@
 	    <div class="carousel-item">
 	      <img class="d-block w-100" src="<?php echo base_url('assets/img/slider2.jpg') ?>" alt="Second slide">
 	    </div>
+		<div class="carousel-item active">
+	      <img class="d-block w-100" src="<?php echo base_url('assets/img/slider1.jpg') ?>" alt="First slide">
+	    </div>
 	  </div>
 	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -26,7 +29,8 @@
 
 	<div class="row text-center mt-3">
 		
-		<?php foreach ($barang as $brg) : ?>
+		<?php $tes = count($barang);
+		foreach ($barang as $brg) : ?>
 
 			<div class="card ml-3" style="width: 16rem;">
 			  <img  src="<?php echo base_url().'/uploads/'.$brg->gambar ?>" class="card-img-top" alt="...">
@@ -40,5 +44,11 @@
 			</div>
 
 		<?php endforeach; ?>
+		<?php 
+			if($tes == 0) { ?>
+			<div class="card-body">
+			    <h5 class="card-title mb-1"><?php echo "Pencarian dengan data tersebut tidak tersedia."; ?></h5>
+			</div>
+		<?php } ?>
 	</div>
 </div>
