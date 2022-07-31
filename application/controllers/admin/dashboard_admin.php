@@ -16,13 +16,18 @@ class Dashboard_admin extends CI_Controller{
 			redirect('auth/login');
 		}
 	}
+
 	public function index()
 	{
+		$data['totalTransaksi'] = $this->model_barang->totalDataTransaksi();
+		$data['totalPengguna'] = $this->model_barang->totalDataPengguna();
+		$data['totalBarang'] = $this->model_barang->totalDataBarang();
 		$this->load->view('templates_admin/header');
 		$this->load->view('templates_admin/sidebar');
-		$this->load->view('admin/dashboard');
+		$this->load->view('admin/dashboard', $data);
 		$this->load->view('templates_admin/footer');
 	}
+
 }
 
  ?>

@@ -1,7 +1,7 @@
 <div class="container-fluid">
 	
 	<div class="card">
-		<h5 class="card-header">Detail Produk</h5>
+		<h5 class="card-header">Detail Barang</h5>
 	  <div class="card-body">
 
 	  	<?php 	foreach	($barang as $brg): ?>
@@ -12,7 +12,7 @@
 	   		<div class="col-md-8">	
 	   			<table class="table">
 	   				<tr>
-	   					<td>Nama Produk</td>
+	   					<td>Nama Barang</td>
 	   					<td><strong><?php echo $brg->nama_brg ?></strong></td>
 	   				</tr>
 	   				<tr>
